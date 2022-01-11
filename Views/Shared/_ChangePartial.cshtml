@@ -1,0 +1,7 @@
+﻿@model IEnumerable<Brands>
+
+
+@foreach (var item in Model)
+{
+    <option value="@item.ModelId">@item.Name</option>
+}

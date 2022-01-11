@@ -1,0 +1,23 @@
+﻿  @model HomeVM
+
+<!DOCTYPE html>
+<html>
+<body>
+
+    <select name="cars" id="marka">
+        <option selected>Select</option>
+    </select>
+
+    <label for="cars">Choose a car:</label>
+    <select name="cars" id="model">
+        <option selected>Select</option>
+        @foreach (var item in Model.Models)
+        {
+            <option value="@item.Id">@item.Name</option>
+        }
+    </select>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="~/JS/script.js"></script>
+
+</html>
